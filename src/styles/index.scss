@@ -1,0 +1,172 @@
+@use './vars.scss';
+@use './Home/Hero.scss';
+
+body {
+    background-color: vars.$gr10;
+    font-family: "Lexend", sans-serif;
+}
+
+.nav-con {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .nav-wrap {
+        width: 1280px;
+        height: 49px;
+        background-color: vars.$gr11;
+        padding: 14px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 100px;
+        border: 1px solid vars.$gr15;
+
+        .nav-logo {
+            width: 116px;
+            height: 30px;
+        }
+
+        .nav-btns {
+            display: flex;
+            gap: 10px;
+
+            button {
+                background-color: transparent;
+                color: white;
+                border: none;
+                font-size: 15px;
+                cursor: pointer;
+                padding: 10px 14px;
+                border-radius: 82px;
+
+                &:hover {
+                    background-color: vars.$gr15;
+                }
+            }
+        }
+
+        .nav-sign {
+            display: flex;
+            gap: 10px;
+
+            .sign,
+            .log {
+                background-color: transparent;
+                color: white;
+                font-size: 15px;
+                padding: 10px 14px;
+                border-radius: 82px;
+                cursor: pointer;
+                border: none;
+
+                &:hover {
+                    background-color: vars.$gr15;
+                }
+            }
+
+            .log {
+                background-color: vars.$g60;
+                color: black;
+
+                &:hover {
+                    background-color: vars.$g60;
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
+
+.footer-wrap {
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    background-color: vars.$gr11;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+    .footer-info {
+        width: 1280px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-weight: 300;
+        padding: 40px;
+        border-bottom: 1px solid vars.$gr15;
+        border-top: 1px solid vars.$gr15;
+
+        div {
+            display: flex;
+            gap: 8px;
+        }
+    }
+
+
+
+    .footer-btns {
+        button {
+            background-color: transparent;
+            color: white;
+            font-size: 15px;
+            padding: 10px 14px;
+            border-radius: 82px;
+            cursor: pointer;
+            border: none;
+
+            &:hover {
+                background-color: vars.$gr15;
+            }
+        }
+    }
+
+    .footer-end {
+        display: flex;
+        background-color: vars.$gr10;
+        justify-content: space-between;
+        width: 1280px;
+        padding: 12px 24px 12px 12px;
+        border-radius: 100px;
+        border: 1px solid vars.$gr15;
+        color: #B3B3B3;
+        font-weight: lighter;
+        font-size: 14px;
+
+
+
+        .footer-end-start {
+            display: flex;
+            gap: 10px;
+
+            img {
+                width: 44px;
+                height: 44px;
+                cursor: pointer;
+            }
+
+        }
+
+
+        .footer-end-end {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .border {
+                border-right: 1px solid #B3B3B3;
+
+            }
+
+            a {
+                text-decoration: none;
+                color: #B3B3B3;
+                padding: 0 10px;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}

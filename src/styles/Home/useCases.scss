@@ -1,0 +1,131 @@
+@use '../vars.scss';
+
+.usecases-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px 0 80px;
+
+    .usecases-head {
+        span {
+            font-size: 38px;
+            color: vars.$g60;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 200;
+            color: vars.$gr70;
+        }
+    }
+
+    .usecases-table1,
+    .usecases-table2 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        .usecases-table {
+            width: 610px;
+            background-color: vars.$gr11;
+            padding: 40px;
+            border-radius: 20px;
+
+            .table-con {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .in-table {
+                    width: 260px;
+                    height: 170px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: vars.$gr10;
+                    border: 1px solid vars.$gr15;
+                    border-radius: 12px;
+                    text-align: center;
+                    gap: 15px;
+
+                    img {
+                        width: 60px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+
+        .usecases-wrap {
+            width: 610px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            span {
+                font-size: 26px;
+
+            }
+
+            p {
+                font-size: 16px;
+                color: vars.$gr70;
+                line-height: 150%;
+                font-weight: 200;
+            }
+
+            .proc {
+                display: flex;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 5px 20px;
+
+                    span {
+                        color: vars.$g60;
+                        font-size: 40px;
+                    }
+
+                    p {
+                        color: vars.$gr70;
+                        font-size: 15px;
+                        font-weight: 200;
+
+                    }
+                }
+                .line:nth-child(2) {
+                    border-left: 1px dashed vars.$gr15;
+                    border-right: 1px dashed vars.$gr15;
+                }
+
+
+            }
+
+            button {
+                border-radius: 82px;
+                color: white;
+                font-weight: 200;
+                background-color: vars.$gr11;
+                border: 1px solid vars.$gr15;
+                padding: 14px 20px;
+                width: max-content;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,97 @@
+@use '../vars.scss';
+
+.features-wrap {
+    padding: 0 80px;
+
+    .features-top {
+        span {
+            color: white;
+        }
+
+        h4 {
+            font-size: 38px;
+            color: vars.$g60;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 200;
+            color: vars.$gr70;
+        }
+    }
+
+    .features-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        .features-buttons {
+            padding: 40px;
+            background-color: vars.$gr11;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 250px;
+
+            button {
+                padding: 14px 20px;
+                color: white;
+                background-color: vars.$gr10;
+                border-radius: 100px;
+                border: 1px solid vars.$gr15;
+                font-weight: 500;
+                width: 180px;
+                cursor: pointer;
+
+                &:hover {
+                    color: vars.$g80;
+                }
+            }
+
+            .active {
+                color: vars.$g60;
+            }
+        }
+
+        .cards {
+
+            .feautures-con {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+
+                .features-card {
+                    width: 410px;
+                    padding: 40px;
+                    background-color: vars.$gr11;
+                    border: 1px solid vars.$gr15;
+                    border-radius: 10px;
+
+                    .card-top {
+                        display: flex;
+                        justify-content: space-between;
+
+                        span {
+                            font-size: 18px;
+                        }
+
+
+                    }
+                    .card-bot {
+                        p {
+                            font-size: 16px;
+                            font-weight: 200;
+                            color: vars.$gr70;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}

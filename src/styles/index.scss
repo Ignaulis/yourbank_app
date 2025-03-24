@@ -1,9 +1,15 @@
 @use './vars.scss';
 @use './Home/Hero.scss';
+@use './Home/OurProduct.scss';
+@use './Home/useCases.scss';
+@use './Home/ourFeatures.scss';
+@use './Home/faq.scss';
+@use './Home/testimonial.scss';
 
 body {
     background-color: vars.$gr10;
     font-family: "Lexend", sans-serif;
+    color: white;
 }
 
 .nav-con {
@@ -166,6 +172,54 @@ body {
                 &:hover {
                     color: white;
                 }
+            }
+        }
+    }
+}
+
+.start-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    margin-bottom: 150px;
+
+    .start-con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px;
+        border-radius: 20px;
+        background-color: #1C1C1C;
+        border: 1px solid vars.$gr15;
+        
+        .start-left {
+            span {
+                font-size: 30px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 150%;
+                color: vars.$gr70;
+                font-weight: 200;
+
+            }
+            .green {
+                color: vars.$g60;
+            }
+        }
+        button {
+            background-color: vars.$g60;
+            border-radius: 82px;
+            color: vars.$gr11;
+            font-size: 14px;
+            width: 150px;
+            height: 49px;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.9;
             }
         }
     }

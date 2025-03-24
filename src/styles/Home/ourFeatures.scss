@@ -29,7 +29,7 @@
         margin-bottom: 50px;
 
         .features-buttons {
-            padding: 40px;
+            padding: 30px;
             background-color: vars.$gr11;
             border-radius: 10px;
             display: flex;
@@ -45,6 +45,7 @@
                 border: 1px solid vars.$gr15;
                 font-weight: 500;
                 width: 180px;
+                font-size: 15px;
                 cursor: pointer;
 
                 &:hover {
@@ -81,6 +82,7 @@
 
 
                     }
+
                     .card-bot {
                         p {
                             font-size: 16px;
@@ -92,6 +94,15 @@
 
                 }
             }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .features-cards {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
         }
     }
 }

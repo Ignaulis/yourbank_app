@@ -1,3 +1,5 @@
+import { hash } from "../api/functions";
+
 export default function StartJ() {
 
     return (
@@ -7,7 +9,7 @@ export default function StartJ() {
                     <span>Start your financial journey with <span className="green">YourBank today!</span></span>
                     <p>Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service</p>
                 </div>
-                <button>Open Account</button>
+                <button onClick={() => hash('#signup')}>Open Account</button>
             </div>
         </div>
     );

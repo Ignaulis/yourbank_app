@@ -78,6 +78,7 @@
         display: flex;
         margin-top: 80px;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         .main-card:nth-child(2) {
             border-left: 1px solid vars.$gr15;

@@ -1,4 +1,6 @@
 import logo from '../assets/hero/Logo.svg';
+import { hash } from '../api/functions';
+
 
 export default function NavBar() {
 
@@ -9,14 +11,14 @@ export default function NavBar() {
                     <img src={logo} alt="logo" />
                 </div>
                 <div className='nav-btns'>
-                    <button>Home</button>
-                    <button>Careers</button>
-                    <button>About</button>
-                    <button>Security</button>
+                    <button onClick={() =>hash('#')}>Home</button>
+                    <button onClick={() =>hash('#careers')}>Careers</button>
+                    <button onClick={() => hash('#about')}>About</button>
+                    <button onClick={() => hash('#security')}>Security</button>
                 </div>
                 <div className='nav-sign'>
-                    <button className='sign'>Sign Up</button>
-                    <button className='log'>Login</button>
+                    <button onClick={() => hash('#signup')} className='sign'>Sign Up</button>
+                    <button onClick={() => hash('#login')} className='log'>Login</button>
                 </div>
             </div>
         </div>

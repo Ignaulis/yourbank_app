@@ -24,9 +24,10 @@
         justify-content: space-between;
         margin-top: 50px;
         margin-bottom: 50px;
+        gap: 40px;
 
         .usecases-table {
-            width: 610px;
+            width: 650px;
             background-color: vars.$gr11;
             padding: 40px;
             border-radius: 20px;
@@ -103,6 +104,7 @@
 
                     }
                 }
+
                 .line:nth-child(2) {
                     border-left: 1px dashed vars.$gr15;
                     border-right: 1px dashed vars.$gr15;
@@ -120,10 +122,20 @@
                 padding: 14px 20px;
                 width: max-content;
                 cursor: pointer;
+
                 &:hover {
                     opacity: 0.9;
                 }
             }
+        }
+    }
+
+    @media screen and (max-width: 1250px) {
+
+        .usecases-table1,
+        .usecases-table2 {
+            flex-wrap: wrap;
+
         }
     }
 

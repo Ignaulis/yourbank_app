@@ -1,5 +1,6 @@
-import UseCasesTable2, {info1, info2} from "./useCasesTable2";
-import UseCasesTable, { table1, table2 } from "./useCaseTable";
+import UseCasesTable2 from "./useCasesTable2";
+import UseCasesTable from "./useCaseTable";
+import { info1, info2, table1, table2 } from "../../../api/data.js";
 
 export default function UseCases() {
 

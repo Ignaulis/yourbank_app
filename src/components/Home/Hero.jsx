@@ -1,5 +1,6 @@
 import check from '../../assets/hero/check.svg'
 import HeroCard from './HeroCard';
+import { hash } from '../../api/functions';
 
 export default function Hero() {
 
@@ -15,7 +16,7 @@ export default function Hero() {
                         Empowering Your <span>Financial Journey</span></h2>
                     <p>At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</p>
                 </div>
-                <button>Open Account</button>
+                <button onClick={() => hash('#signup')}>Open Account</button>
             </div>
             <div className="hero-table">
                 <HeroCard />

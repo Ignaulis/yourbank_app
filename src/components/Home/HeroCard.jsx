@@ -7,6 +7,7 @@ import eth from '../../assets/hero/eth.svg'
 import bit from '../../assets/hero/bit.svg'
 import dolla from '../../assets/hero/dolla.svg'
 import arrows from '../../assets/hero/arrows.svg'
+import { hash } from '../../api/functions'
 
 export default function HeroCard() {
 
@@ -81,7 +82,7 @@ export default function HeroCard() {
                     </div>
                 </div>
                 <div className='button'>
-                <button>Exchange</button>
+                <button onClick={() => hash('#login')}>Exchange</button>
                 </div>
             </div>
 

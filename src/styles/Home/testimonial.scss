@@ -78,6 +78,7 @@
             justify-content: space-between;
             align-items: center;
             gap: 40px;
+            
 
 
             .test-card {
@@ -89,12 +90,13 @@
                 height: 350px;
                 margin-bottom: 50px;
 
+
                 img {
                     width: 70px;
                 }
 
                 p {
-                    font-size: 18px;
+                    font-size: 16px;
                     line-height: 150%;
 
                 }
@@ -104,5 +106,15 @@
                     font-size: 18px;
                 }
             }
+            .test-card:nth-child(2) {
+                -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
+                mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
+            }
+            
+            .test-card:nth-child(4) {
+                -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
+                mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
+            }
+            
         }
 }

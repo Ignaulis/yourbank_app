@@ -1,0 +1,261 @@
+@use './vars.scss';
+
+
+.login-wrap {
+    width: 100%;
+    margin: 20px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loginCard-con {
+        width: 600px;
+        height: 500px;
+        padding: 80px 200px;
+        border-radius: 16px;
+        border: 1px solid vars.$gr15;
+        background-color: #1c1c1c;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .corner-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .logn-top {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h3 {
+                color: vars.$g60;
+                font-size: 38px;
+                font-weight: 500;
+                margin: 20px;
+            }
+            span {
+                font-size: 16px;
+                color: vars.$gr75;
+                font-weight: 200;
+            }
+        }
+        .login-inputs {
+            display: flex;
+            gap: 30px;
+            .pass-input {
+                display: flex;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    right: 20px;
+                    top: 30%;
+                    cursor: pointer;
+                }
+            }
+            input {
+                background-color: vars.$gr10;
+                padding: 20px 20px;
+                border-radius: 88px;
+                border: 1px solid vars.$gr15;
+                font-weight: 200;
+                width: 280px;
+                color: white;
+                outline: none;
+            }
+        }
+
+        a {
+            color: white;
+            font-weight: 300;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+            cursor: pointer;
+            margin-bottom: 3px;
+        }
+
+        .login-bot {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+            .login-buttons {
+                display: flex;
+                flex-direction: column;
+
+                gap: 20px;
+
+                .login {
+                    background-color: vars.$g60;
+                    padding: 14px 24px;
+                    width: 340px;
+                    border-radius: 63px;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+                .signup {
+                    background-color: vars.$gr15;
+                    border: 1px solid vars.$gr20;
+                    color: white;
+                    padding: 14px 24px;
+                    width: 340px;
+                    border-radius: 63px;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+
+
+            }
+            .socials {
+                display: flex;
+                gap: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.signup-wrap {
+    width: 100%;
+    margin: 20px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .signUpCard-con {
+        width: 600px;
+        height: 500px;
+        padding: 80px 200px;
+        border-radius: 16px;
+        border: 1px solid vars.$gr15;
+        background-color: #1c1c1c;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .corner-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .signUp-top {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h3 {
+                color: vars.$g60;
+                font-size: 38px;
+                font-weight: 500;
+                margin: 20px;
+            }
+            span {
+                font-size: 16px;
+                color: vars.$gr75;
+                font-weight: 200;
+                text-align: center;
+            }
+        }
+
+        .signup-inputs {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+
+            .names,
+            .email {
+                display: flex;
+                gap: 30px;
+
+                .eye {
+                    display: flex;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        right: 20px;
+                        top: 30%;
+                        cursor: pointer;
+
+                    }
+                }
+
+                input {
+                    background-color: vars.$gr10;
+                    padding: 20px 20px;
+                    border-radius: 88px;
+                    border: 1px solid vars.$gr15;
+                    font-weight: 200;
+                    width: 280px;
+                    color: white;
+                    outline: none;
+                }
+            }
+
+        }
+
+        .signup-bot {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+            .signup-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .signup {
+                    background-color: vars.$g60;
+                    padding: 14px 24px;
+                    width: 340px;
+                    border-radius: 63px;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+                .login {
+                    background-color: vars.$gr15;
+                    border: 1px solid vars.$gr20;
+                    color: white;
+                    padding: 14px 24px;
+                    width: 340px;
+                    border-radius: 63px;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+
+            }
+            .socials {
+                display: flex;
+                gap: 20px;
+                cursor: pointer;
+            }
+        }
+}
+}

@@ -3,32 +3,25 @@
 .faq-wrap {
     padding: 0 80px;
     margin-bottom: 80px;
+    
 
-    .faq-top {
-        margin-bottom: 70px;
-        margin-top: 120px;
-
-        span {
-            font-size: 38px;
-        }
-
-        .green {
-            color: vars.$g60;
-
-        }
-
-        p {
-            font-size: 16px;
-            font-weight: 200;
-            color: vars.$gr70;
-        }
-    }
-
-    .faq-cards {
+    .faq-cards  {
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
         margin-bottom: 20px;
+        margin-top: 50px;
+        height: 600px;
+        overflow: hidden;
+        -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
+        transition: height 1s ease-in-out;
+
+        &.expand {
+            height: 1200px;
+            mask-image: none;
+            
+        }
 
         .faq-card {
             width: 550px;
@@ -44,12 +37,6 @@
                 font-weight: 200;
                 color: vars.$gr70;
             }
-        }
-
-        .faq-card-cl:nth-child(3),
-        .faq-card-cl:nth-child(4) {
-            -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
-            mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
         }
 
 

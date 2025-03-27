@@ -1,12 +1,22 @@
 import { createContext, useEffect, useState } from "react";
 import Home from '../pages/Home';
+import Careers from "../pages/Careers";
+import About from "../pages/About";
+import Security from "../pages/Security";
+import Login from "../pages/Login";
+import SignUp from "../pages/SignUp";
 
 export const RouterProvider = createContext();
 
 export const Router = ({ children }) => {
 
     const routes = {
-        '': {p: <Home />}
+        '': {p: <Home />},
+        'careers': {p: <Careers />},
+        'about': {p: <About />},
+        'security': {p: <Security />},
+        'login': {p: <Login />},
+        'signup': {p: <SignUp />}
     }
 
     const [page, setPage] = useState(() => {

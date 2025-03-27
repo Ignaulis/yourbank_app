@@ -61,8 +61,17 @@
             }
         }
     }
+    .hero-table {
 
     .hero-card-wrap {
+        height: 700px;
+        position: relative;
+        .arrows {
+            position: relative;
+            z-index: -1000;
+            top: -750px;
+            left: 320px;
+        }
         .money {
             display: flex;
             width: 150px;
@@ -261,13 +270,8 @@
             }
         }
 
-    }
-    .arrows {
-        position: absolute;
-        z-index: -1000;
-        top: 130px;
-        right: 80px;
-    }
+    }}
+
     .currency {
         display: flex;
         gap: 10px;

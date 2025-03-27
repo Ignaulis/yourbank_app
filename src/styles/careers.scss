@@ -1,0 +1,239 @@
+@use './vars.scss';
+
+.careers-con {
+    padding: 0 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+
+    .welcome-container {
+        width: 100%;
+        height: 600px;
+        background-color: vars.$gr11;
+        border-radius: 20px;
+        display: flex;
+        position: relative;
+        padding-bottom: 40px;
+
+
+
+        .image2 {
+            width: 380px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .welcome-text {
+            background-color: vars.$gr10;
+            border-radius: 20px;
+            padding: 60px;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: absolute;
+            z-index: 1;
+            left: 40px;
+            top: 40px;
+            width: 550px;
+
+            h2 {
+                font-size: 48px;
+                font-weight: 500;
+                margin: 0;
+
+                .green {
+                    color: vars.$g60;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                color: vars.$gr70;
+                line-height: 150%;
+                font-weight: 200;
+                margin: 0;
+            }
+        }
+
+        .welcome-image {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            width: 715px;
+        }
+    }
+}
+
+.values-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    Header {
+        padding-right: 90px;
+    }
+
+    .values-cards {
+        display: flex;
+        width: 100%;
+        height: 400px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+
+        .values-card {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 0 24px;
+            border-left: 1px solid vars.$g60;
+            width: 600px;
+            height: 150px;
+
+            h3 {
+                color: vars.$gr30;
+                font-size: 40px;
+                margin: 0;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 16px;
+                color: vars.$gr60;
+            }
+        }
+    }
+}
+
+.benefits-con {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 70px;
+
+    .benefits-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+
+        .benefits-card {
+            width: 520px;
+            background: linear-gradient(120deg, #c9ff330f 0%, #c9ff330a 21%, #1C1C1C 41%, #1C1C1C00 100%);
+            padding: 30px;
+            border-radius: 5px 30px 0 40px;
+
+        }
+    }
+}
+
+.jobopenings-con {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .jobopenings-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .jobopening-card {
+            width: 550px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: vars.$gr11;
+            border-radius: 16px;
+
+            .jobopening-head {
+                margin-bottom: 20px;
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin: 4px;
+                }
+
+                .jobopening-location {
+                    display: flex;
+                    gap: 20px;
+                    padding: 10px 0 0 20px;
+
+                    div {
+                        background-color: vars.$gr10;
+                        border: 1px solid vars.$gr15;
+                        padding: 6px 14px;
+                        border-radius: 68px;
+                        font-size: 16px;
+                        color: vars.$gr70;
+                        font-weight: 200;
+                    }
+                }
+            }
+
+            .aboutthisjob {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                span {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: vars.$gr70;
+                    line-height: 150%;
+                    font-weight: 200;
+                }
+            }
+
+            .jobopening-req {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+
+                span {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+
+                    .req-post {
+                        display: flex;
+                        gap: 10px;
+                        span {
+                        font-size: 16px;
+                        font-weight: 200;
+                        color: vars.$gr70;
+                        }
+
+                    }
+
+
+            }
+            .btn {
+                margin-top: 20px;
+                button {
+                    padding: 12px 20px;
+                    background-color: vars.$g60;
+                    border-radius: 82px;
+                    cursor: pointer;
+                    font-weight: 400;
+                    font-size: 14px;
+                    border: none;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+
+}

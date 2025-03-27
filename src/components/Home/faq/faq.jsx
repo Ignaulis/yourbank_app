@@ -1,3 +1,4 @@
+import Header from "../../Header";
 import FaqCard from "./faqCard";
 import { useState } from "react";
 
@@ -9,21 +10,19 @@ export default function Faq() {
         setShowAll(e => !e)
     }
 
-
     return (
 
-
-
         <div className="faq-wrap">
-            <div className="faq-top">
-                <span><span className="green">Frequently</span> Asked Questions</span>
-                <p>Still you have any questions? Contact our Team via support@yourbank.com</p>
-            </div>
-            <div className="faq-cards">
-                <FaqCard showAll={showAll} />
+            <Header 
+                nameGreen1={'Frequently'}
+                name={'Asked Questions'}
+                para={'Still you have any questions? Contact our Team via support@yourbank.com'}
+            />
+           <div className={`faq-cards ${showAll ? 'expand' : ''}`}>
+                <FaqCard showAll={showAll}/>
             </div>
             <div className="faq-btn">
-                <button onClick={toggle}>{showAll ? "Show Less FAQ’s ▲" : "Load All FAQ’s ▼"}</button>
+                <button onClick={toggle}>{showAll ? "Show Less FAQ’s ⬆" : "Load All FAQ’s ⬇"}</button>
             </div>
         </div>
     );

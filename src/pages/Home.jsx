@@ -5,18 +5,20 @@ import OurProducts from "../components/Home/OurProducts";
 import Testimonial from "../components/Home/testimonial/testimonial";
 import UseCases from "../components/Home/useCases/useCases";
 import StartJ from "../components/StartJ";
+import img from '../assets/hero/Abstract Design (1).svg'
 
 export default function Home() {
 
-    return(
-        <>
-        <Hero />
-        <OurProducts />
-        <UseCases />
-        <OurFeatures />
-        <Faq />
-        <Testimonial />
-        <StartJ />
-        </>
+    return (
+        <div className="home-wrap">
+            <img className="top-img" src={img} alt="" />
+            <Hero />
+            <OurProducts />
+            <UseCases />
+            <OurFeatures />
+            <Faq />
+            <Testimonial />
+            <StartJ />
+        </div>
     );
 }

@@ -8,7 +8,7 @@ export default function FaqCard({ showAll }) {
         <>
             {
                 displayAll.map((i, k) => (
-                    <div className={showAll ? 'faq-card' : 'faq-card faq-card-cl'} key={k}>
+                    <div className="faq-card" key={k}>
 
                         <span>{i.top}</span>
                         <p>{i.text}</p>

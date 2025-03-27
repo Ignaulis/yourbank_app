@@ -3,24 +3,6 @@
 .features-wrap {
     padding: 0 80px;
 
-    .features-top {
-        span {
-            color: white;
-        }
-
-        h4 {
-            font-size: 38px;
-            color: vars.$g60;
-            font-weight: 500;
-        }
-
-        p {
-            font-size: 16px;
-            font-weight: 200;
-            color: vars.$gr70;
-        }
-    }
-
     .features-cards {
         display: flex;
         justify-content: space-between;

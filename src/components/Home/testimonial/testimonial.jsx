@@ -3,6 +3,7 @@ import arl from '../../../assets/home/Button.svg';
 import arr from '../../../assets/home/Button (1).svg';
 import TestimonialCard from './testimonialCard';
 import { testCardBuisness, testCardIndividuals } from '../../../api/data';
+import Header from '../../Header';
 
 export default function Testimonial() {
 
@@ -31,18 +32,13 @@ export default function Testimonial() {
 
     return (
         <div className="test-wrap">
-            <div className="test-top">
-                <div className="ourproducts-text">
-                    <h2>
-                        Our <span className='green'>Testimonials</span>
-                    </h2>
-                    <span className='para'>Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey</span>
-                </div>
-                <div className="ourproducts-btns">
-                    <button onClick={() => setShowIndividuals(true)} className={showIndividuals ? 'tog' : 'non'}>For Individuals</button>
-                    <button onClick={() => setShowIndividuals(false)} className={showIndividuals ? 'non' : 'tog'}>For Businesses</button>
-                </div>
-            </div>
+            <Header
+                showIndividuals={showIndividuals}
+                setShowIndividuals={setShowIndividuals}
+                name={'Our'} nameGreen2={'Testimonials'}
+                para={'Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey'}
+                btn={true}
+            />
             <div className="test-slider">
                 <img src={arl} alt="arrow left" onClick={prev} />
                 {

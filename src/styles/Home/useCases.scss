@@ -5,19 +5,6 @@
     flex-direction: column;
     padding: 0 60px 0 80px;
 
-    .usecases-head {
-        span {
-            font-size: 38px;
-            color: vars.$g60;
-        }
-
-        p {
-            font-size: 16px;
-            font-weight: 200;
-            color: vars.$gr70;
-        }
-    }
-
     .usecases-table1,
     .usecases-table2 {
         display: flex;
@@ -33,6 +20,13 @@
             border-radius: 20px;
 
             .table-con {
+                position: relative;
+                .imge1 {
+                    position: absolute;
+                    top: -40px;
+                    left: -40px;
+                    z-index: 1;
+                }
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -51,6 +45,7 @@
                     border-radius: 12px;
                     text-align: center;
                     gap: 15px;
+                    z-index: 2;
 
                     img {
                         width: 60px;

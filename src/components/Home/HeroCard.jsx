@@ -13,9 +13,8 @@ export default function HeroCard() {
 
     return (
         <div className="hero-card-wrap">
-            <div className='arrows'>
-            <img  src={arrows} alt="arrows" />
-            </div>
+
+
 
             <div className="money">
                 <img src={plius} alt="plius" />
@@ -97,6 +96,8 @@ export default function HeroCard() {
                     <img src={eth} alt="eth" />
                 </div>
             </div>
+
+            <img className='arrows'  src={arrows} alt="arrows" />
         </div>
     );
 }

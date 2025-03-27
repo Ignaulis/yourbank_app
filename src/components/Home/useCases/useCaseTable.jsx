@@ -1,10 +1,10 @@
-// // import imge from '../../../assets/hero/Abstract Design (2).svg';
+import imge from '../../../assets/hero/Abstract Design (2).svg';
 export default function UseCasesTable({ data }) {
 
     return (
         <div className="usecases-table">
             <div className="table-con">
-                {/* <img className='imge1' src={imge} alt="" /> */}
+                <img className='imge1' src={imge} alt="" />
 
                 {
                     data.map((item, key) => (

@@ -140,3 +140,155 @@ export const faqData = [
     { top: 'How do I set up direct deposit for my paycheck?', text: 'To set up direct deposit, contact your employer and provide them with your bank account details. You can find this information in your online banking account under the "Account Details" section. Once your employer sets up direct deposit, your paycheck will be deposited automatically into your account each payday.' },
     { top: 'How do I close my account?', text: 'To close your account, please contact our customer support team. They will guide you through the process and ensure that any remaining balance is transferred to another account if necessary. Please note that there may be certain conditions or fees associated with closing an account, depending on the type of account and your account balance.' }
 ];
+
+
+//careers - values
+
+export const values = [
+    { n: 'Integrity', t: 'We conduct ourselves with utmost honesty, transparency, and ethical behavior. We believe in doing what is right for our customers, colleagues, and stakeholders, even when faced with difficult choices.' },
+    { n: 'Customer Centricity', t: 'Our customers are at the heart of everything we do. We are dedicated to understanding their needs, providing personalized solutions, and delivering exceptional service that exceeds expectations.' },
+    { n: 'Collaboration', t: 'We foster a collaborative and inclusive work environment, where teamwork and diversity are celebrated. By leveraging the unique strengths and perspectives of our employees, we drive innovation and achieve greater success together.' },
+    { n: 'Innovation', t: 'We embrace change and constantly seek innovative solutions to meet the evolving needs of our customers. We encourage our employees to think creatively, challenge conventions, and explore new ideas to drive the future of banking.' },
+]
+
+// benefits
+
+import benefitsIcon1 from '../assets/careers/Icon Container (8).svg'
+import benefitsIcon2 from '../assets/careers/Icon Container (9).svg'
+import benefitsIcon3 from '../assets/careers/Icon Container (10).svg'
+import benefitsIcon4 from '../assets/careers/Icon Container (11).svg'
+
+export const benefits = [
+    {
+        img: benefitsIcon1,
+        n: 'Competitive Compensation',
+        p: 'We provide a competitive salary package that recognizes the skills and expertise of our employees. YourBank believes in rewarding exceptional performance and offering opportunities for financial growth.'
+    },
+    {
+        img: benefitsIcon2,
+        n: 'Health and Wellness',
+        p: 'We prioritize the health and well-being of our employees by providing comprehensive medical, dental, and vision insurance plans. We also offer wellness programs, gym memberships, and resources to support a healthy lifestyle.'
+    },
+    {
+        img: benefitsIcon3,
+        n: 'Retirement Planning',
+        p: 'YourBank is committed to helping employees plan for their future. We offer a retirement savings plan with a generous employer match to help them build a secure financial foundation for the long term.'
+    },
+    {
+        img: benefitsIcon4,
+        n: 'Work-Life Balance',
+        p: 'We understand the importance of maintaining a healthy work-life balance. YourBank offers flexible work arrangements, paid time off, parental leave, and other programs that support employees in managing their personal and professional commitments.'
+    },
+
+]
+
+export const jobopenings = [
+    {
+        n: 'Relationship Manager',
+        loc: 'India',
+        dep: 'Retail Banking',
+        about: 'As a Relationship Manager at YourBank, you will be responsible for developing and maintaining relationships with our valued customers. You will proactively identify their financial needs and offer tailored solutions to help them achieve their goals. We are seeking individuals with excellent communication skills, a strong sales acumen, and a passion for delivering exceptional customer service.',
+        req: [
+            "Bachelor's degree in Business, Finance, or a related field",
+            'Minimum of 3 years of experience in sales or relationship management in the banking industry',
+            'Proven track record of meeting and exceeding sales targets',
+            'Excellent interpersonal and negotiation skills',
+            'Strong knowledge of banking products and services'
+        ]
+    },
+    {
+        n: 'Financial Analyst',
+        loc: 'India',
+        dep: 'Corporate Finance',
+        about: 'As a Financial Analyst at YourBank, you will analyze financial data, create reports, and provide insights to support strategic decision-making. We are looking for individuals with strong analytical skills, attention to detail, and the ability to work with complex datasets.',
+        req: [
+            "Bachelor's degree in Finance, Accounting, or a related field",
+            'Minimum of 2 years of experience in financial analysis or a related role',
+            'Proficiency in financial modeling and data analysis tools',
+            'Strong problem-solving skills',
+            'Excellent communication and presentation skills'
+        ]
+    },
+    {
+        n: 'Customer Service Representative',
+        loc: 'India',
+        dep: 'Customer Support',
+        about: 'As a Customer Service Representative at YourBank, you will be the first point of contact for customers, addressing inquiries, resolving issues, and providing a positive banking experience. We seek individuals who are patient, empathetic, and committed to delivering top-notch customer service.',
+        req: [
+            "High school diploma or equivalent",
+            'Minimum of 1 year of experience in customer service, preferably in banking',
+            'Strong communication and active listening skills',
+            'Ability to handle challenging situations with professionalism',
+            'Familiarity with banking systems and processes is a plus'
+        ]
+    }
+];
+
+
+// Releases
+
+import releasesImg1 from '../assets/about/Image (4).png';
+import releasesImg2 from '../assets/about/Image (5).png';
+import releasesImg3 from '../assets/about/Image (6).png';
+import releasesImg4 from '../assets/about/Image (7).png';
+
+export const releases = [
+    {
+        img: releasesImg1,
+        n: 'YourBank Launches New Rewards Program to Enhance Customer Loyalty and Satisfaction',
+        loc: 'India',
+        date: '06/11/2024',
+        para: 'YourBank is pleased to announce the introduction of our new Rewards Program, aimed at rewarding our loyal customers and enhancing their banking experience. The program offers exclusive benefits, discounts, and personalized offers tailored to individual customer preferences. With this initiative, YourBank reaffirms its commitment to delivering exceptional value and building lasting relationships with our valued customers.'
+    },
+    {
+        img: releasesImg2,
+        n: 'YourBank Expands Branch Network with Opening of New Location in Chennai',
+        loc: 'India',
+        date: '12/11/2024',
+        para: 'YourBank is excited to announce the grand opening of our newest branch in [City]. This expansion is a testament to our continued commitment to serving our customers and providing them with convenient access to our comprehensive range of banking services. The new branch will feature state-of-the-art facilities, a team of dedicated professionals, and a personalized approach to banking, further strengthening our presence in the local community.'
+    },
+    {
+        img: releasesImg3,
+        n: 'YourBank Partners with Local Nonprofit to Support Financial Education Initiatives',
+        loc: 'India',
+        date: '24/12/2024',
+        para: 'YourBank is excited to unveil our new Sustainable Banking Initiative, demonstrating our commitment to environmental responsibility. This initiative includes a range of sustainable banking products and services, such as green loans, eco-friendly investment options, and paperless banking solutions. By incorporating sustainable practices into our operations, we aim to contribute to a greener future while providing innovative banking solutions to our customers.'
+    },
+    {
+        img: releasesImg4,
+        n: 'YourBank Launches Sustainable Banking Initiative to Promote Environmental Responsibility',
+        loc: 'India',
+        date: '28/12/2024',
+        para: 'YourBank is excited to unveil our new Sustainable Banking Initiative, demonstrating our commitment to environmental responsibility. This initiative includes a range of sustainable banking products and services, such as green loans, eco-friendly investment options, and paperless banking solutions. By incorporating sustainable practices into our operations, we aim to contribute to a greener future while providing innovative banking solutions to our customers.'
+    },
+]
+
+// security 
+
+import security1 from '../assets/security/Icon Container (12).svg';
+import security2 from '../assets/security/Icon Container (13).svg';
+import security3 from '../assets/security/Icon Container (14).svg';
+import security4 from '../assets/security/Icon Container (15).svg';
+
+export const security = [
+    {
+        img: security1,
+        n: 'Secure Online Banking Platform',
+        para: 'Our online banking platform is built with multiple layers of security to safeguard your information. We utilize industry-standard encryption protocols to ensure that your data remains confidential and protected during transmission.'
+    },
+    {
+        img: security2,
+        n: 'Multi-Factor Authentication',
+        para: 'To enhance the security of your online banking experience, we employ multi-factor authentication. This additional layer of security requires you to provide multiple pieces of identification, such as a password and a one-time verification code, to access your account.'
+    },
+    {
+        img: security3,
+        n: 'Fraud Monitoring',
+        para: 'We have sophisticated fraud detection systems in place to monitor your accounts for any suspicious activities. Our dedicated team works around the clock to detect and prevent unauthorized transactions, providing you with peace of mind.'
+    },
+    {
+        img: security4,
+        n: 'Secure Mobile Banking',
+        para: 'Our mobile banking app is designed with the same level of security as our online banking platform. You can confidently access your accounts, make transactions, and manage your finances on the go, knowing that your information is protected.'
+    },
+]

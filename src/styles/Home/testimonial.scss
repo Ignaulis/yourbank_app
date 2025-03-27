@@ -50,3 +50,13 @@
             
         }
 }
+
+@media screen and (max-width: 800px) {
+    .test-wrap {
+        padding: 0;
+        .test-slider {
+            flex-wrap: wrap;
+
+        }
+    }
+}

@@ -114,3 +114,44 @@
         }
     }
 }
+
+@media screen and (max-width: 950px) {
+    .security-con {
+        padding: 0;
+        overflow: hidden;
+
+        .security-container {
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            height: max-content;
+            justify-content: center;
+            width: 300px;
+
+            .security-text{
+                position: static;
+                top: auto;
+                right: auto;
+                width: 300px;
+            }
+
+            .security-image {
+                position: static;
+                top: auto;
+                right: auto;
+                img {
+                    width: 400px;
+                }
+            }
+        }
+
+        .protect-con {
+            .protect-cards {
+                height: max-content;
+                .protect-card {
+                    width: 330px;
+                    height: max-content;
+                }
+            }
+        }
+    }}

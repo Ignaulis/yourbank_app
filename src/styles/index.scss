@@ -22,12 +22,13 @@ body {
 .home-wrap {
     .top-img {
         position: absolute;
-        width: 500px;
+        width: 400px;
         top: -20px;
         left: -20px;
         z-index: -1;
     }
 }
+
 
 
 // navigation
@@ -37,7 +38,7 @@ body {
     margin-top: 20px;
 
     .nav-wrap {
-        width: 1280px;
+        width: 90%;
         height: 49px;
         background-color: vars.$gr11;
         padding: 14px 24px;
@@ -46,60 +47,149 @@ body {
         align-items: center;
         border-radius: 100px;
         border: 1px solid vars.$gr15;
+        position: relative;
+
+        .hamb {
+            cursor: pointer;
+        }
 
         .nav-logo {
             width: 116px;
             height: 30px;
         }
 
-        .nav-btns {
+        .nav-content {
+            width: 66%;
             display: flex;
-            gap: 10px;
+            justify-content: space-between;
 
-            button {
-                background-color: transparent;
-                color: white;
-                border: none;
-                font-size: 15px;
-                cursor: pointer;
-                padding: 10px 14px;
-                border-radius: 82px;
-
-                &:hover {
-                    background-color: vars.$gr15;
+            .nav-btns {
+                display: flex;
+                gap: 10px;
+    
+                button {
+                    background-color: transparent;
+                    color: white;
+                    border: none;
+                    font-size: 15px;
+                    cursor: pointer;
+                    padding: 10px 14px;
+                    border-radius: 82px;
+    
+                    &:hover {
+                        background-color: vars.$gr15;
+                    }
                 }
             }
-        }
-
-        .nav-sign {
-            display: flex;
-            gap: 10px;
-
-            .sign,
-            .log {
-                background-color: transparent;
-                color: white;
-                font-size: 15px;
-                padding: 10px 14px;
-                border-radius: 82px;
-                cursor: pointer;
-                border: none;
-
-                &:hover {
-                    background-color: vars.$gr15;
+    
+            .nav-sign {
+                display: flex;
+                gap: 10px;
+    
+                .sign,
+                .log {
+                    background-color: transparent;
+                    color: white;
+                    font-size: 15px;
+                    padding: 10px 14px;
+                    border-radius: 82px;
+                    cursor: pointer;
+                    border: none;
+    
+                    &:hover {
+                        background-color: vars.$gr15;
+                    }
                 }
-            }
-
-            .log {
-                background-color: vars.$g60;
-                color: black;
-
-                &:hover {
+    
+                .log {
                     background-color: vars.$g60;
-                    opacity: 0.9;
+                    color: black;
+    
+                    &:hover {
+                        background-color: vars.$g60;
+                        opacity: 0.9;
+                    }
                 }
             }
         }
+
+
+        .nav-content-hamb {
+            height: 300px;
+            background-color: vars.$gr11;
+            padding: 10px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            width: 100px;
+            position: absolute;
+            top: 78px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            border: 1px solid vars.$gr15;
+            z-index: 1000;
+
+
+
+            .nav-btns {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+    
+                button {
+                    background-color: transparent;
+                    color: white;
+                    border: none;
+                    font-size: 15px;
+                    cursor: pointer;
+                    padding: 10px 14px;
+                    border-radius: 82px;
+    
+                    &:hover {
+                        background-color: vars.$gr15;
+                    }
+                }
+            }
+    
+            .nav-sign {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+    
+                .sign,
+                .log {
+                    background-color: transparent;
+                    color: white;
+                    font-size: 15px;
+                    padding: 10px 14px;
+                    border-radius: 82px;
+                    cursor: pointer;
+                    border: none;
+    
+                    &:hover {
+                        background-color: vars.$gr15;
+                    }
+                }
+    
+                .log {
+                    background-color: vars.$g60;
+                    color: black;
+    
+                    &:hover {
+                        background-color: vars.$g60;
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+
+        
     }
 }
 
@@ -115,7 +205,7 @@ body {
     color: white;
 
     .footer-info {
-        width: 1280px;
+        width: 100%;
         display: flex;
         justify-content: center;
         gap: 20px;
@@ -123,10 +213,14 @@ body {
         padding: 40px;
         border-bottom: 1px solid vars.$gr15;
         border-top: 1px solid vars.$gr15;
+        flex-wrap: wrap;
 
         div {
             display: flex;
             gap: 8px;
+            img {
+                width: 20px;
+            }
         }
     }
 
@@ -152,13 +246,14 @@ body {
         display: flex;
         background-color: vars.$gr10;
         justify-content: space-between;
-        width: 1280px;
+        width: 100%;
         padding: 12px 24px 12px 12px;
         border-radius: 100px;
         border: 1px solid vars.$gr15;
         color: #B3B3B3;
         font-weight: lighter;
         font-size: 14px;
+        flex-wrap: wrap;
 
 
 
@@ -198,7 +293,6 @@ body {
     }
 }
 
-// Start your financial bottom wrap
 .start-wrap {
     display: flex;
     justify-content: center;
@@ -255,6 +349,15 @@ body {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .start-wrap {
+        padding: 0;
+        .start-con {
+            padding: 50px 10px;
+        }
+    }
+}
+
 
 
 // header
@@ -264,12 +367,14 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    gap: 30px;
+    flex-wrap: wrap;
 
     .header-text {
         width: 100vmin;
 
         h2 {
-            font-size: 5vmin;
+            font-size: 38px;
             font-weight: 500;
             margin: 15px 0;
 
@@ -279,7 +384,7 @@ body {
         }
 
         .para {
-            font-size: 2vmin;
+            font-size: 14px;
             font-weight: 100;
             color: vars.$gr70;
             line-height: 150%;

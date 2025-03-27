@@ -188,3 +188,75 @@
     }
 
 }
+
+@media screen and (max-width: 950px) {
+    .about-con {
+        padding: 0;
+        overflow: hidden;
+
+        .about-container {
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            height: max-content;
+            justify-content: center;
+            width: 300px;
+
+            .about-text{
+                position: static;
+                top: auto;
+                right: auto;
+                width: 300px;
+            }
+
+            .about-image {
+                position: static;
+                top: auto;
+                right: auto;
+                img {
+                    width: 400px;
+                }
+            }
+        }
+
+        .mission-con {
+            .mission-cards{
+                flex-wrap: wrap;
+            .mission-card{
+                flex-wrap: wrap;
+                gap: 20px;
+
+                .card-top,
+                .card-bot  {
+                    flex-wrap: wrap;
+                    height: max-content;
+
+                    .top-img,
+                    .bot-img {
+
+                        .image1 {
+                            width: 200px;
+                        }
+                        .image3 {
+                            width: 200px;
+                        }
+                    }
+                }
+
+                .bot-para,
+                .top-para {
+                    height: max-content;
+                }
+            }}
+        }
+
+        .realeases-con {
+            .realeases-cards {
+                .realeases-card {
+                    width: 320px;
+                }
+            }
+        }
+
+    }
+}

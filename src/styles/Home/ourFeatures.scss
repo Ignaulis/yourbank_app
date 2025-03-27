@@ -84,7 +84,22 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+        }
+    }
+}
 
+@media screen and (max-width: 800px) {
+    .features-wrap {
+        padding: 0;
+        .features-cards {
+            .cards {
+                .feautures-con {
+
+    
+                .features-card {
+                    width: 300PX;
+                }}
+            }
         }
     }
 }

@@ -63,3 +63,28 @@
 
     }
 }
+
+
+
+@media screen and (max-width: 800px) {
+    .faq-wrap{
+        padding: 0;
+        .faq-cards{
+&.expand {
+            height: auto;
+        }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .faq-wrap{
+    .faq-cards{
+&.expand {
+        height: auto;
+    }
+}
+    
+}
+}

@@ -29,25 +29,30 @@
             top: 0;
             right: 0;
         }
+
         .logn-top {
             display: flex;
             align-items: center;
             flex-direction: column;
+
             h3 {
                 color: vars.$g60;
                 font-size: 38px;
                 font-weight: 500;
                 margin: 20px;
             }
+
             span {
                 font-size: 16px;
                 color: vars.$gr75;
                 font-weight: 200;
             }
         }
+
         .login-inputs {
             display: flex;
             gap: 30px;
+
             .pass-input {
                 display: flex;
                 position: relative;
@@ -59,6 +64,7 @@
                     cursor: pointer;
                 }
             }
+
             input {
                 background-color: vars.$gr10;
                 padding: 20px 20px;
@@ -100,10 +106,12 @@
                     border-radius: 63px;
                     border: none;
                     cursor: pointer;
+
                     &:hover {
                         opacity: 0.9;
                     }
                 }
+
                 .signup {
                     background-color: vars.$gr15;
                     border: 1px solid vars.$gr20;
@@ -113,6 +121,7 @@
                     border-radius: 63px;
                     border: none;
                     cursor: pointer;
+
                     &:hover {
                         opacity: 0.9;
                     }
@@ -120,6 +129,7 @@
 
 
             }
+
             .socials {
                 display: flex;
                 gap: 20px;
@@ -136,6 +146,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .signUpCard-con {
         width: 600px;
         height: 500px;
@@ -162,12 +173,14 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+
             h3 {
                 color: vars.$g60;
                 font-size: 38px;
                 font-weight: 500;
                 margin: 20px;
             }
+
             span {
                 font-size: 16px;
                 color: vars.$gr75;
@@ -232,10 +245,12 @@
                     border-radius: 63px;
                     border: none;
                     cursor: pointer;
+
                     &:hover {
                         opacity: 0.9;
                     }
                 }
+
                 .login {
                     background-color: vars.$gr15;
                     border: 1px solid vars.$gr20;
@@ -245,17 +260,48 @@
                     border-radius: 63px;
                     border: none;
                     cursor: pointer;
+
                     &:hover {
                         opacity: 0.9;
                     }
                 }
 
             }
+
             .socials {
                 display: flex;
                 gap: 20px;
                 cursor: pointer;
             }
         }
+    }
 }
+
+@media screen and (max-width: 800px) {
+    .login-wrap {
+        .loginCard-con {
+            padding: 20px 0;
+            height: max-content;
+
+            .login-inputs {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .signup-wrap {
+        .signUpCard-con {
+            padding: 20px 0;
+            height: max-content;
+
+            .signup-inputs {
+
+                .names,
+                .email {
+                    flex-direction: column;
+
+                }
+            }
+        }
+    }
 }

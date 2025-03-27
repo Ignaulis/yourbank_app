@@ -7,7 +7,25 @@ import { useState } from 'react'
 
 export default function LoginCard() {
 
-    const [showPass, setShowPass] = useState(false)
+    const [showPass, setShowPass] = useState(false);
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+
+    const handleLogin = () => {
+
+        const user = JSON.parse(localStorage.getItem('users')) || [];
+        const findUser = user.find(user => user.email === email && user.password === password)
+
+        if(findUser){
+            alert('You logged in!')
+            window.location.hash = '#'
+        } else{
+            alert('Incorrect email or password!')
+        }
+        
+        
+    }
 
     return (
         <div className="login-wrap">
@@ -17,9 +35,9 @@ export default function LoginCard() {
                     <span>Welcome back! Please log in to access your account.</span>
                 </div>
                 <div className="login-inputs">
-                    <input type="text" placeholder='Enter your Email'/>
+                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Enter your Email'/>
                     <div className="pass-input">
-                        <input className='pass' type={showPass ? 'text' : 'password'} placeholder='Enter your Password'/>
+                        <input className='pass' value={password} onChange={(e) => setPassword(e.target.value)} type={showPass ? 'text' : 'password'} placeholder='Enter your Password'/>
                         <img src={img1} alt="" onClick={() => setShowPass(e => !e)}/>
                     </div>
 
@@ -28,7 +46,7 @@ export default function LoginCard() {
 
                 <div className="login-bot">
                     <div className="login-buttons">
-                        <button className="login">Login</button>
+                        <button className="login" onClick={handleLogin}>Login</button>
                         <button className="signup">Sign Up</button>
                     </div>
                     <span>Or Continue with</span>

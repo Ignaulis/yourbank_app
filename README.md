@@ -37,47 +37,27 @@ YourBank is a visually engaging and responsive banking website. It features mult
 
 ## 📸 Screenshots
 
-> *(Add screenshots here if you want to showcase different pages or mobile view.)*
+![App Preview1](src/assets/Untitled design.png)
+![App Preview2](src/assets/Untitled design (1).png)
 
 ## 🚀 Getting Started
 
 1.  **Clone the repository:**
     ```bash
-    git clone [repository URL]
+    git clone https://github.com/Ignaulis/yourbank_app.git
     ```
-2.  **Install backend dependencies:**
+2.  **Install dependencies:**
     ```bash
-    cd backend
     npm install
     # or
     yarn install
     ```
-3.  **Set up the MySQL database:**
-    * Create a database for the project.
-    * Configure the database connection details in the backend application (e.g., in a `.env` file or configuration file).
-    * Run migrations or import a database schema (if provided).
-4.  **Run the backend server:**
+3.  **Run:**
     ```bash
     npm start
     # or
     yarn start
     ```
-5.  **Install frontend dependencies:**
-    ```bash
-    cd ../frontend
-    npm install
-    # or
-    yarn install
-    ```
-6.  **Configure the frontend to connect to the backend (if necessary, e.g., API endpoint).**
-7.  **Run the frontend development server:**
-    ```bash
-    npm start
-    # or
-    yarn start
-    ```
-
-Please refer to the individual `backend` and `frontend` directories for more specific setup instructions and configuration options.
 
 ## 📚 License
 

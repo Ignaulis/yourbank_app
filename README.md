@@ -37,8 +37,8 @@ YourBank is a visually engaging and responsive banking website. It features mult
 
 ## 📸 Screenshots
 
-![App Preview1](src/assets/Untitled design.png)
-![App Preview2](src/assets/Untitled design (1).png)
+![App Preview1](src/assets/photo2.png)
+![App Preview2](src/assets/photo1.png)
 
 ## 🚀 Getting Started
 

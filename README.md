@@ -1,12 +1,85 @@
-# React + Vite
+# 💳 YourBank – Multi-Page Bank Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, modern **multi-page** banking website for a fictional bank called **YourBank**.  
+This project is based on a **Figma design clone**, developed using **React** and **SCSS**, with working **login and registration functionality** using `localStorage`.
 
-Currently, two official plugins are available:
+## 🎯 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+YourBank is a visually engaging and responsive banking website. It features multiple pages, reusable components, and basic authentication (login/register) handled locally. The goal was to recreate a clean, component-based UI from Figma and implement user interactions for a realistic prototype.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – Frontend framework
+- **SCSS** – Styling with modular SCSS structure
+- **React Router** – Client-side routing for multiple pages
+- **LocalStorage** – Used for user authentication (login & registration)
+- **Figma** – Source design
+
+## 📄 Pages
+
+- **Home Page**
+- **Careers Page**
+- **About Page**
+- **Security Page**
+- **SignUp Page**
+- **Login Page**
+
+> Authentication pages (Login/Register) store user data in `localStorage` for demo purposes.
+
+## ✨ Features
+
+- 🔁 Reusable, clean React components
+- 🎞️ Custom slider elements
+- 🖼️ Based on a modern Figma design
+- 📱 Fully responsive (mobile, tablet, desktop)
+- 👥 Functional login & register flow using `localStorage`
+- 🔐 Basic routing with protected route support potential
+
+## 📸 Screenshots
+
+> *(Add screenshots here if you want to showcase different pages or mobile view.)*
+
+## 🚀 Getting Started
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [repository URL]
+    ```
+2.  **Install backend dependencies:**
+    ```bash
+    cd backend
+    npm install
+    # or
+    yarn install
+    ```
+3.  **Set up the MySQL database:**
+    * Create a database for the project.
+    * Configure the database connection details in the backend application (e.g., in a `.env` file or configuration file).
+    * Run migrations or import a database schema (if provided).
+4.  **Run the backend server:**
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+5.  **Install frontend dependencies:**
+    ```bash
+    cd ../frontend
+    npm install
+    # or
+    yarn install
+    ```
+6.  **Configure the frontend to connect to the backend (if necessary, e.g., API endpoint).**
+7.  **Run the frontend development server:**
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+
+Please refer to the individual `backend` and `frontend` directories for more specific setup instructions and configuration options.
+
+## 📚 License
+
+```text
+This project is open-source and free to use.

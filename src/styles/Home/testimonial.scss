@@ -4,56 +4,68 @@
     padding: 0 80px;
     margin-bottom: 100px;
 
-        .test-slider {
+    .test-slider {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 70px;
+
+        .sliders {
             display: flex;
+        }
+
+        .arrows {
+            display: flex;
+            gap: 100px;
+        }
+
+
+
+        .test-card {
+            display: flex;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            gap: 40px;
-            margin-top: 70px;
-            
+            text-align: center;
+            height: 350px;
+            margin-bottom: 50px;
 
 
-            .test-card {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                text-align: center;
-                height: 350px;
-                margin-bottom: 50px;
-
-
-                img {
-                    width: 70px;
-                }
-
-                p {
-                    font-size: 16px;
-                    line-height: 150%;
-
-                }
-
-                span {
-                    color: vars.$g60;
-                    font-size: 18px;
-                }
+            img {
+                width: 70px;
             }
-            .test-card:nth-child(2) {
-                -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
-                mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
+
+            p {
+                font-size: 16px;
+                line-height: 150%;
+
             }
-            
-            .test-card:nth-child(4) {
-                -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
-                mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
+
+            span {
+                color: vars.$g60;
+                font-size: 18px;
             }
-            
         }
+
+        // .test-card:nth-child(2) {
+        //     -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%);
+        //     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%);
+        // }
+
+        // .test-card:nth-child(4) {
+        //     -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%);
+        //     mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%);
+        // }
+
+    }
 }
 
 @media screen and (max-width: 800px) {
     .test-wrap {
         padding: 0;
+
         .test-slider {
             flex-wrap: wrap;
 

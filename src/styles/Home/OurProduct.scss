@@ -54,5 +54,9 @@
 @media screen and (max-width: 800px) {
     .ourproducts-wrap {
         padding: 0;
+
+        .ourproducts-cards {
+            justify-content: center;
+        }
     }
 }

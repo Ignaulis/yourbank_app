@@ -3,24 +3,28 @@
 .faq-wrap {
     padding: 0 80px;
     margin-bottom: 80px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .faq-cards  {
+
+    .faq-cards {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 15px;
         margin-bottom: 20px;
         margin-top: 50px;
         height: 600px;
         overflow: hidden;
-        -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
-        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%,rgba(0, 0, 0, 1) 100%);
+        -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%);
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%);
         transition: height 1s ease-in-out;
 
         &.expand {
             height: 1200px;
             mask-image: none;
-            
+
         }
 
         .faq-card {
@@ -67,24 +71,25 @@
 
 
 @media screen and (max-width: 800px) {
-    .faq-wrap{
+    .faq-wrap {
         padding: 0;
-        .faq-cards{
-&.expand {
-            height: auto;
+
+        .faq-cards {
+            &.expand {
+                height: auto;
+            }
         }
-        }
-        
+
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .faq-wrap{
-    .faq-cards{
-&.expand {
-        height: auto;
+    .faq-wrap {
+        .faq-cards {
+            &.expand {
+                height: auto;
+            }
+        }
+
     }
-}
-    
-}
 }

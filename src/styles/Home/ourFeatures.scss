@@ -91,14 +91,16 @@
 @media screen and (max-width: 800px) {
     .features-wrap {
         padding: 0;
+
         .features-cards {
             .cards {
                 .feautures-con {
+                    justify-content: center;
 
-    
-                .features-card {
-                    width: 300PX;
-                }}
+                    .features-card {
+                        width: 300PX;
+                    }
+                }
             }
         }
     }

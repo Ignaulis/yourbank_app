@@ -9,8 +9,9 @@
     .usecases-table1,
     .usecases-table2 {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin-top: 50px;
+
 
         margin-bottom: 50px;
         gap: 40px;
@@ -23,12 +24,14 @@
 
             .table-con {
                 position: relative;
+
                 .imge1 {
                     position: absolute;
                     top: -40px;
                     left: -40px;
                     z-index: 1;
                 }
+
                 display: flex;
                 justify-content: center;
                 align-items: center;
